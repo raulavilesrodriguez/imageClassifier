@@ -1,7 +1,13 @@
 [versions]
 agp = "8.6.1"
 # MLKit
+barcodeScanning = "17.3.0"
+cameraCamera2 = "1.4.1"
+coilCompose = "1.4.0"
+faceDetection = "16.1.7"
+faceMeshDetection = "16.0.0-beta3"
 imageLabeling = "17.0.9"
+
 kotlin = "2.0.20"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -11,11 +17,31 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.12.01"
 # navigation
-navigationCompose = "2.8.4"
+navigationCompose = "2.8.5"
+# MLKit
+objectDetection = "17.0.2"
+textRecognition = "16.0.1"
+# hilt library
+hiltNavigationCompose = "1.2.0"
+hiltVersion = "2.51.1"
+accompanistPermissions = "0.30.1"
+# Annotations procesing
+ksp = "2.0.20-1.0.25"
+# truth
+truth = "1.1.3"
 
 [libraries]
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCamera2" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCamera2" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraCamera2" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetection" }
+face-mesh-detection = { module = "com.google.mlkit:face-mesh-detection", version.ref = "faceMeshDetection" }
 image-labeling = { module = "com.google.mlkit:image-labeling", version.ref = "imageLabeling" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -30,8 +56,17 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+mlkit-detection = { module = "com.google.mlkit:object-detection", version.ref = "objectDetection" }
+text-recognition = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognition" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.ref = "hiltVersion"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hiltVersion"}
+truth = { module = "com.google.truth:truth", version.ref = "truth" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+android-library = {id = "com.android.library", version = "8.0.2"}

@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hiltAndroid)
 }
 
 android {
@@ -67,8 +70,31 @@ dependencies {
 
     // navigation
     implementation(libs.androidx.navigation.compose)
+
+    // Coil
+    implementation(libs.coil.compose)
+
     // ml-kit library android kotlin
     implementation(libs.image.labeling)
-    implementation("com.google.mlkit:face-detection:16.1.5")
+    implementation(libs.face.detection)
+    implementation(libs.mlkit.detection)
+    implementation(libs.barcode.scanning)
+    implementation(libs.text.recognition)
+    implementation(libs.face.mesh.detection)
 
+    // CameraX
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+
+    // hilt dependencies
+    ksp(libs.hilt.compiler)
+    implementation(libs.hilt.android)
+    implementation(libs.accompanist.permissions)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    //new dependencies to test
+    kspAndroidTest(libs.hilt.compiler)
+    androidTestImplementation(libs.truth)
+    androidTestImplementation(libs.hilt.android.testing)
 }
