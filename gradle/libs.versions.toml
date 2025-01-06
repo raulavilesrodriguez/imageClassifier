@@ -1,4 +1,5 @@
 [versions]
+#accompanistNavigationAnimation = "0.23.0"
 agp = "8.6.1"
 # MLKit
 barcodeScanning = "17.3.0"
@@ -31,6 +32,7 @@ ksp = "2.0.20-1.0.25"
 truth = "1.1.3"
 
 [libraries]
+#accompanist-navigation-animation = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "accompanistNavigationAnimation" }
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCamera2" }

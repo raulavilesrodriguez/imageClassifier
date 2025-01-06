@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.example.imageclassifier"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.imageclassifier"
@@ -92,6 +92,10 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.accompanist.permissions)
     implementation(libs.androidx.hilt.navigation.compose)
+
+    // Accompanist
+    implementation(libs.accompanist.permissions)
+    //implementation(libs.accompanist.navigation.animation)
 
     //new dependencies to test
     kspAndroidTest(libs.hilt.compiler)

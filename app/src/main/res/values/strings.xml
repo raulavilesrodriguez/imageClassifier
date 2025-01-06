@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">ImageClassifier</string>
+    <string name="app_name">Clasificador de Imágenes con AI</string>
+
+    <string name="face_mesh_detection_title">Detección de malla facial</string>
+    <string name="face_mesh_detection_description">Detecta información de malla facial en imágenes de corto alcance.</string>
+    <string name="face_mesh_detection_url">https://developers.google.com/static/ml-kit/vision/face-detection/images/face_detection2x.png</string>
+
+    <string name="barcode_detection_title">Escaneo de códigos de barras-QR</string>
+    <string name="barcode_detection_description">Escanea y procesa códigos de barras.</string>
+    <string name="barcode_detection_url">https://developers.google.com/static/ml-kit/vision/barcode-scanning/images/barcode_scanning2x.png</string>
+
+    <string name="text_recognition_title">Reconocimiento de texto</string>
+    <string name="text_recognition_description">Reconoce y extrae texto de imágenes.</string>
+    <string name="text_recognition_url">https://developers.google.com/static/ml-kit/vision/text-recognition/images/text_recognition2x.png</string>
+
+    <string name="image_labeling_detection_title">Etiquetado de imágenes</string>
+    <string name="image_labeling_detection_description">Identifica objetos, ubicaciones, especies animales, productos y más.</string>
+    <string name="image_labeling_detection_url">https://developers.google.com/static/ml-kit/vision/image-labeling/images/image_labeling2x.png</string>
+
+    <string name="object_detection_title">Detección de objetos</string>
+    <string name="object_detection_description">Localiza y rastrea en tiempo real uno o más objetos en la transmisión de la cámara en vivo.</string>
+    <string name="object_detection_url">https://developers.google.com/static/ml-kit/vision/object-detection/images/object_detection2x.png</string>
+
+    // permissions
+    <string name="grant_permission">Por favor da permiso de la camara</string>
+    <string name="camera_not_available">Camara no disponible broo</string>
+    <string name="request_permission">Pedido de Permiso</string>
 </resources>
